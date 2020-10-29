@@ -29,6 +29,9 @@
     "ma-studio-e2e": {
       "tags": [],
       "implicitDependencies": ["ma-studio"]
+    },
+    "ang-lib": {
+      "tags": []
     }
   }
 }

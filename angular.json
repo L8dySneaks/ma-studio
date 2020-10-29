@@ -116,6 +116,32 @@
           }
         }
       }
+    },
+    "ang-lib": {
+      "projectType": "library",
+      "root": "libs/ang-lib",
+      "sourceRoot": "libs/ang-lib/src",
+      "prefix": "ma-studio",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/ang-lib/src/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ang-lib/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {
