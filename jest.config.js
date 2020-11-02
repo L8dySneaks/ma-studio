@@ -3,5 +3,6 @@ module.exports = {
     '<rootDir>/apps/ma-studio',
     '<rootDir>/libs/ang-lib',
     '<rootDir>/apps/api',
+    '<rootDir>/libs/data',
   ],
 };
